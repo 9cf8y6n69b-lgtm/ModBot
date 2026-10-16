@@ -168,7 +168,7 @@ graph TD
 
 ### Step 1: Clone Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/ModBot.git
+git clone https://github.com/EnzoNotNice/ModBot.git
 cd ModBot
 ```
 
