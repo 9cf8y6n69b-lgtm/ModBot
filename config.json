@@ -1,0 +1,38 @@
+{
+  "colors": {
+    "primary": "#5865F2",
+    "success": "#57F287",
+    "warning": "#FEE75C",
+    "danger": "#ED4245",
+    "info": "#5865F2"
+  },
+  "moderation": {
+    "defaultMuteDuration": "1h",
+    "warnThresholdMute": 3,
+    "warnThresholdKick": 5,
+    "maxWarnings": 5,
+    "warnExpiry": "30d"
+  },
+  "automod": {
+    "enabled": true,
+    "maxMentions": 5,
+    "maxLines": 20,
+    "maxEmojis": 15,
+    "duplicateThreshold": 3,
+    "spamInterval": 5000,
+    "spamThreshold": 4,
+    "raidThreshold": 10,
+    "raidInterval": 10000,
+    "defaultFilteredWords": [
+      "discord.gg/",
+      "free-nitro",
+      "steam-gift",
+      "scam-link"
+    ]
+  },
+  "logging": {
+    "enabled": true,
+    "messageLogsChannelId": null
+  },
+  "emojis": {}
+}

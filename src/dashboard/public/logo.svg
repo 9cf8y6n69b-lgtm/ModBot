@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <defs>
+    <!-- Background Squircle Gradient -->
+    <linearGradient id="mb-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1f26"/>
+      <stop offset="100%" stop-color="#0e0f14"/>
+    </linearGradient>
+
+    <!-- Border Subtle Specular Gradient -->
+    <linearGradient id="mb-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.22)"/>
+      <stop offset="50%" stop-color="rgba(88, 101, 242, 0.4)"/>
+      <stop offset="100%" stop-color="rgba(255, 255, 255, 0.05)"/>
+    </linearGradient>
+
+    <!-- Left Wing Gradient: Deep Blurple to Indigo -->
+    <linearGradient id="mb-wing-left" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5865F2"/>
+      <stop offset="100%" stop-color="#3B44B3"/>
+    </linearGradient>
+
+    <!-- Right Wing Gradient: Electric Indigo to Violet -->
+    <linearGradient id="mb-wing-right" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7983F5"/>
+      <stop offset="100%" stop-color="#5865F2"/>
+    </linearGradient>
+
+    <!-- Sentinel Core Gradient: Cyan to Vivid Blue -->
+    <linearGradient id="mb-core" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+
+    <!-- Ambient Core Glow -->
+    <filter id="mb-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Squircle Badge -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#mb-bg)" stroke="url(#mb-border)" stroke-width="1.5"/>
+
+  <!-- Subtle Radial Backlight Glow -->
+  <circle cx="32" cy="32" r="18" fill="#5865F2" opacity="0.18" filter="url(#mb-glow)"/>
+
+  <!-- Left Wing of M (Shield Facet) -->
+  <path d="M 17 21 C 17 19.8 17.8 19 19 19 L 26.5 19 C 27.4 19 28.2 19.5 28.6 20.3 L 32 27 L 27.5 35 L 20 25 L 20 41 C 20 42.1 19.1 43 18 43 C 16.9 43 16 42.1 16 41 L 16 22 C 16 21.4 16.4 21 17 21 Z" 
+        fill="url(#mb-wing-left)"/>
+
+  <!-- Right Wing of M (Shield Facet) -->
+  <path d="M 47 21 C 47 19.8 46.2 19 45 19 L 37.5 19 C 36.6 19 35.8 19.5 35.4 20.3 L 32 27 L 36.5 35 L 44 25 L 44 41 C 44 42.1 44.9 43 46 43 C 47.1 43 48 42.1 48 41 L 48 22 C 48 21.4 47.6 21 47 21 Z" 
+        fill="url(#mb-wing-right)"/>
+
+  <!-- Lower Shield Taper / Bottom Crest -->
+  <path d="M 28 39 L 32 47 L 36 39 L 34 37 L 32 41 L 30 37 Z" 
+        fill="#7983F5" opacity="0.9"/>
+
+  <!-- Central Sentinel Core (Protective Diamond Eye) -->
+  <path d="M 32 17 L 36 24 L 32 30 L 28 24 Z" 
+        fill="url(#mb-core)" filter="url(#mb-glow)"/>
+
+  <!-- Core Specular Spark Dot -->
+  <circle cx="32" cy="24" r="1.5" fill="#ffffff" opacity="0.9"/>
+</svg>
